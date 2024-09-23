@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tw0{
+            background-color: rgb(255, 247, 240);
+            text-align: center;
+            margin-left:250px;
+            
+            border-radius: 30px;
+            width:650px;
+            height: 170px;
+        }
+        img{
+            width: 10%;
+            
+        }
+        h2{
+            padding-left: 0px;
+            color:rgba(135, 165, 235, 0.923);
+        }
+        input:hover{
+background-color: aqua;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <form action="./response.html" method="get">
+    <fieldset id="tw0">
+        <img src="./logo.jpeg">
+        <h2>TELANGANA STATE ROAD TRANSPORT CORPORATION</h2>
+    <h1>General bus pass</h1>
+    </fieldset>
+    <fieldset id="one">
+        <legend>application details</legend>
+        <label for="username">username</label>
+        <input type="text" name="user" id="username" required>
+        <label for="fathername">fathername</label>
+        <input type="text" name="user" id="fathername" required>
+        <br><br>
+        <label for="date of birth">Date Of Birth</label>
+        <input type="date" name="date of birth" id="date of birth" required>
+        <label>   Gender:</label> 
+        <label for="male">male</label>
+        <input type="radio" name="user" id="male" required>
+        <label for="female">female</label>
+        <input type="radio" name="user" id="female" required>
+        <br><br>
+        <label for="asOnDate">Age As On:</label>
+<input type="date" id="asOnDate" name="asOnDate">
+<label for="aadharumber">Aadharnumber:</label>
+<input type="text" id="aadharnumber" name="number" required maxlength="12">
+<br><br>
+
+<label for="mobile">Mobile Number:</label>
+<input type="tel" id="mobile" name="number"  required maxlength="10">
+<label for="mail">E mail:</label>
+<input type=" email" id="mail" name="email" required>
+<br><br>
+<label for="photo">Photo:</label>
+<input type="file" id="Photo" name="photo">
+<br> 
+    </fieldset>
+<fieldset>
+   <legend>Residential Adress details</legend> 
+   <label for="text area">textarea</label>
+ <textarea id="textarea"name="area"></textarea>
+ <label for="District">District</label>
+        <input type="text" name="district" id="District"  value="Hyedarabadh"required>
+        <br><br>
+        <label for="Mandal">Mandal</label>
+        <input type="text" name="mandal" id="Mandal" required>
+        <label for="village">village</label>
+        <input type="text" name="Village" id="village" required>
+        <br><br>
+        <label for="Pincode">Pincode</label>
+        <input type="number" name="pincode" id="Pincode" required  maxelngth="6">
+
+
+</fieldset>
+<fieldset>
+    <legend>Pass type Details </legend>
+    <label for="city">City:</label>
+    <select name="City" id="City">
+        <option value="hyd">hyd</option>
+        <option value="rangaredy">rangareddy</option>
+        <option value=" medchal"> medchal</option>
+    </select>
+    <br><br>
+    <label for="passtype">Passtype:</label>
+    <select name="Passtype" id="Passtype">
+        <option value="Greaterpass">Greaterpass</option>
+        <option value="metropass">metropass</option>
+        <option value="ordinary pass "> ordinarypass</option>
+        <option value="metroexpress"> metroexpress</option>
+        
+    </select>
+    
+
+</fieldset>
+<fieldset>
+    <legend>
+        Mode of payment</legend>
+        <label for="payment mode">Payment Mode:</label>
+            <select name="payment mode" id="paymentmode">
+                <option value="select payment mode">select payment mode</option>
+                <option value="payment at counter">payment at counter</option>
+                
+            </select>
+            <br><br>
+            <label for="pass delivery mode">Pass delivery mode:</label>
+            <select name="pass delivery" id="pass delivery mode">
+                <option value="select pass delivery mode">select payment mode</option>
+                <option value="at counter">payment at counter</option>
+                
+            </select>
+            
+    </legend>
+</fieldset>
+<a href="response.html"> <input type="submit"></a>
+    </form>
+</body>
+</html>
